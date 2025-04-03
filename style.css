@@ -1,0 +1,95 @@
+#animated-image {
+  transform: translateX(100%); /* Start offscreen to the right */
+  transition: transform 1s ease-out; /* Add smooth transition */
+}
+
+#animated-image.animate-in {
+  transform: translateX(0); /* Slide into view */
+}
+@media (prefers-color-scheme: dark) {
+  .my-dark-section {
+    background-color: #1a202c; /* Dark background */
+    color: #edf2f7; /* Light text for dark mode */
+  }
+
+  .my-dark-section h2, 
+  .my-dark-section h3 {
+    color: #edf2f7; /* Light text for headings */
+  }
+
+  .my-dark-section p {
+    color: #a0aec0; /* Lighter gray text for paragraphs */
+  }
+}
+#continuous-slider {
+  overflow: hidden;
+}
+
+#slider-content {
+  animation: scroll 15s linear infinite; /* Adjust speed as needed */
+  display: inline-flex;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); } /* Adjust based on content width */
+}
+/* Add this to your CSS file or within a <style> tag */
+
+.my-dark-section {
+  background-color: #1a202c; /* Dark background */
+  color: #edf2f7; /* Light text for dark mode */
+}
+
+.my-dark-section .bg-white {
+  background-color: #2d3748; /* Dark card background */
+}
+
+.my-dark-section .text-gray-800,
+.my-dark-section .text-gray-700 {
+  color: #edf2f7; /* Light text for dark mode */
+}
+
+.my-dark-section .text-gray-600 {
+  color: #a0aec0; /* Lighter gray text for dark mode */
+}
+
+.my-dark-section input,
+.my-dark-section textarea {
+  background-color: #4a5568; /* Dark input background */
+  color: #edf2f7; /* Light input text */
+  border-color: #718096; /* Dark input border */
+}
+
+.my-dark-section input:focus,
+.my-dark-section textarea:focus {
+  border-color: #667eea; /* Focus border color */
+  box-shadow: 0 0 0 3px rgba(102, 110, 234, 0.5); /* Focus shadow */
+}
+
+/* Ensure play button and 360 are also dark mode */
+.my-dark-section .bg-opacity-75 {
+  background-color: rgba(45, 55, 72, 0.75); /* Darker background for play button and 360 */
+}
+
+.my-dark-section svg,
+.my-dark-section .text-sm {
+  color: #a0aec0; /* Lighter color for play button and 360 text */
+}
+.material-icons {
+           .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+        }
